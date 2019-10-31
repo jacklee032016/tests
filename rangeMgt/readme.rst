@@ -76,7 +76,7 @@ I think, there are 3 advantages in using c++;
 
 * Second, With support of template, the Range can be anything, which can be compared and sorted, such as integer, float, complex number and other things. So I insist on using template in definition of range and its operation in C++.
 
-* Third, C++ is very easy to implement and test the functions, there are a lot of easily used test framework to implement TDD (Test Driving Development). For example, catch2 is used in my software to finish the unit tests and integrated tests, without knowing the details about catch2.
+* Third, C++ is very easy to implement and test the functions, there are a lot of easily used test framework to implement TDD (Test Driving Development). For example, **catch2** is used in my software to finish the unit tests and integrated tests, without knowing the details about **catch2**.
 
 
 For C++ version, all operations and data structures are based on the **map** from STL.
