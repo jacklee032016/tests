@@ -48,7 +48,7 @@ understanding of the code and simplifying the complexity of implementation, I al
 keep all these types in all of the 3 operations.
 
 
-| C Language Version
+| **C Language Version**
 
 
 In the version of C language, a Binary Tree is implemented. The key of algorithm 
@@ -68,23 +68,15 @@ items of the tree when range is added and deleted; when searching the first avai
 item, we compare these points at first with argument of ``start``, then begin the next
 search from these point in right direct.
 
-| C++ Language Version
+| **C++ Language Version**
 
 I think, there are 3 advantages in using c++;
 
-* First, we don't need invent a wheel again. There are a lot of optimized algorithms
-has been implemented in STL, and can be easily used directly, simplfying the complexity
-of implementation.
+* First, we don't need invent a wheel again. There are a lot of optimized algorithms has been implemented in STL, and can be easily used directly, simplfying the complexity of implementation.
 
-* Second, With support of template, the Range can be anything, which can be compared
-and sorted, such as integer, float, complex number and other things. So I insist on 
-using template in definition of range and its operation in C++.
+* Second, With support of template, the Range can be anything, which can be compared and sorted, such as integer, float, complex number and other things. So I insist on using template in definition of range and its operation in C++.
 
-* Third, C++ is very easy to implement and test the functions, there are a lot of easily
-used test framework to implement TDD (Test Driving Development). For example, catch2
-is used in my software to finish the unit tests and integrated tests, without knowing 
-the details about catch2.
-
+* Third, C++ is very easy to implement and test the functions, there are a lot of easily used test framework to implement TDD (Test Driving Development). For example, catch2 is used in my software to finish the unit tests and integrated tests, without knowing the details about catch2.
 
 
 For C++ version, all operations and data structures are based on the **map** from STL.
@@ -109,7 +101,7 @@ and GCC 6.4.1 in Fedora 25.32_1(32bit).
 Only ANCI C and STL C++11 are used, so it can be easy to be built with other 
 toolchains, such as VC++.
 
-| APIs:
+| **APIs**:
 
 * C version: refer to c/include/rangeSet.h
 * C++ version: refer to cpp/include/rangesApi.h
@@ -144,12 +136,12 @@ Modify following variables can define how to compile the software:
 
 | **EDITION**
 
-In $ROOT/Rules.mak, modify as **EDITION=debug** or **EDITION=release** to compile 
+In **$ROOT/Rules.mak**, modify as **EDITION=debug** or **EDITION=release** to compile 
 the debug or release version;
 
 | **ARCH**
 
-In $ROOT/Makefile, define as **ARCH** or **ARCH=arm** to compile native or cross
+In **$ROOT/Makefile**, define as **ARCH** or **ARCH=arm** to compile native or cross
 platform version. For native version, all libaries are compiled as static to make 
 test/debug more easier; for cross platform version, they are shared libaries to 
 save space.
